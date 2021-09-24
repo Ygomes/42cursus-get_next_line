@@ -6,7 +6,7 @@
 /*   By: ygomes-d <ygomes-d@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/16 08:44:55 by ygomes-d          #+#    #+#             */
-/*   Updated: 2021/09/24 12:17:26 by ygomes-d         ###   ########.fr       */
+/*   Updated: 2021/09/24 20:17:44 by ygomes-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,11 @@ static char	*make_next_str(char *str, int i)
 {
 	char	*next_str;
 
+	if (!str[i])
+	{
+		free (str);
+		return (NULL);
+	}
 	next_str = ft_strdup(str + i);
 	free (str);
 	return (next_str);
