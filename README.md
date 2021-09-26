@@ -10,4 +10,4 @@ This function return the line that has just been read. If there is nothing
 else to read or if an error has occurred it will return NULL.
 
 # The program must be compiled in this way:
-gcc  -D BUFFER_SIZE=<size> get_next_line.c get_next_line_utils.c
+gcc  -D BUFFER_SIZE=< size > get_next_line.c get_next_line_utils.c
